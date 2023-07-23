@@ -1,0 +1,5 @@
+#include "matrix.hpp"
+#include "normalize.hpp"
+#include "propagation.hpp"
+#include "training.hpp"
+#include "update_matrix.hpp"

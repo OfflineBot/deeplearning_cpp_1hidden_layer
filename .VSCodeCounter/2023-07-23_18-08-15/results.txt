@@ -1,0 +1,59 @@
+Date : 2023-07-23 18:08:15
+Directory : c:\Users\Flint\Desktop\AI\cpp\DL\dl2
+Total : 27 files,  667 codes, 7 comments, 185 blanks, all 859 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         25 |        645 |          7 |        182 |        834 |
+| Python   |          1 |         21 |          0 |          3 |         24 |
+| Markdown |          1 |          1 |          0 |          0 |          1 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                           | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                              |         27 |        667 |          7 |        185 |        859 |
+| . (Files)                                                      |          5 |         91 |          0 |         23 |        114 |
+| math                                                           |          5 |         97 |          0 |         27 |        124 |
+| matrix                                                         |          2 |         60 |          0 |         21 |         81 |
+| network                                                        |          6 |        176 |          0 |         44 |        220 |
+| structs                                                        |          5 |         62 |          0 |         14 |         76 |
+| types                                                          |          4 |        181 |          7 |         56 |        244 |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                       | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\README.md                 | Markdown |          1 |          0 |          0 |          1 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\main.cpp                  | C++      |          7 |          0 |          2 |          9 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\math\all_math_import.hpp  | C++      |          4 |          0 |          1 |          5 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\math\dot.hpp              | C++      |         25 |          0 |          8 |         33 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\math\sigmoid.hpp          | C++      |         34 |          0 |          9 |         43 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\math\sum.hpp              | C++      |         17 |          0 |          5 |         22 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\math\t.hpp                | C++      |         17 |          0 |          4 |         21 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\matrix\random_matrix.hpp  | C++      |         47 |          0 |         15 |         62 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\matrix\zero_matrix.hpp    | C++      |         13 |          0 |          6 |         19 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\network.hpp               | C++      |         15 |          0 |          4 |         19 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\network\all_network.hpp   | C++      |          5 |          0 |          0 |          5 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\network\matrix.hpp        | C++      |         18 |          0 |          2 |         20 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\network\normalize.hpp     | C++      |         64 |          0 |         18 |         82 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\network\propagation.hpp   | C++      |         50 |          0 |         12 |         62 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\network\training.hpp      | C++      |         22 |          0 |          5 |         27 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\network\update_matrix.hpp | C++      |         17 |          0 |          7 |         24 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\structs\all_structs.hpp   | C++      |          4 |          0 |          0 |          4 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\structs\matrix.hpp        | C++      |         13 |          0 |          3 |         16 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\structs\norm.hpp          | C++      |         20 |          0 |          4 |         24 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\structs\storages.hpp      | C++      |         16 |          0 |          4 |         20 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\structs\training.hpp      | C++      |          9 |          0 |          3 |         12 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\testing.hpp               | C++      |         47 |          0 |         14 |         61 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\types\vec.hpp             | C++      |         10 |          0 |          3 |         13 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\types\vec1_operator.hpp   | C++      |         62 |          2 |         14 |         78 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\types\vec2_operator.hpp   | C++      |        106 |          5 |         39 |        150 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\types\vec_import.hpp      | C++      |          3 |          0 |          0 |          3 |
+| c:\Users\Flint\Desktop\AI\cpp\DL\dl2\z.py                      | Python   |         21 |          0 |          3 |         24 |
+| Total                                                          |          |        667 |          7 |        185 |        859 |
++----------------------------------------------------------------+----------+------------+------------+------------+------------+
