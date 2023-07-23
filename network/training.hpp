@@ -3,17 +3,14 @@
 #include "update_matrix.hpp"
 
 TrainingData DeepLearning::train(int iterations, float learning_rate, Matrix matrix, Normalize norm) {
-    for (int i = 0; i < iterations; i++) {
+    for (int i = 0; i <= iterations; i++) {
 
-        if (i % 1000)
-            printf("%f%%", i / iterations * 100.0);
+        if (i % 1000 == 0.0)
+            printf("%f%%\n", round(static_cast<float>(i) / static_cast<float>(iterations) * 100.0));
 
         ZAStorage za_storage = forward(matrix, norm);
-        printf("----  FINISHED FORWARD ----\n");
         DeltaStorage delta_storage = backward(matrix, norm, za_storage);
-        printf("---- FINISHED BACKWARD ----\n");
-        Matrix matrix = update_matrix(matrix, norm, za_storage, delta_storage, learning_rate);
-        printf("---- FNISHED UPDATING ----\n");
+        Matrix matrix1 = update_matrix(matrix, norm, za_storage, delta_storage, learning_rate);
 
     }
 

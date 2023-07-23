@@ -9,7 +9,6 @@ vec2<float> dot(vec2<float> array1, vec2<float> array2) {
     int rows = array1.size();
     int cols = array1[0].size();
 
-    int array2_size = array2.size();
     int array2_i_size = array2[0].size();
     
     vec2<float> result = zero_matrix(rows, array2_i_size);

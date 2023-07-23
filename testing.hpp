@@ -55,6 +55,7 @@ int test() {
 
     TrainingData data = dl.train(10000, 0.01, matrix, norm);
 
+    println(data.matrix.w1);
     return 0;
 }
 
