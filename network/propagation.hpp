@@ -1,11 +1,14 @@
 #ifndef PROPAGATION_H
 #define PROPAGATION_H
 
+#include <iostream>
 #include "../network.hpp"
 #include "../types/vec_import.hpp"
 #include "../math/all_math_import.hpp"
+#include "../testing.hpp"
 
 ZAStorage DeepLearning::forward(Matrix matrix, Normalize norm) {
+
 
     vec2<float> z1 = dot(norm.x_norm, matrix.w1) + matrix.b1;
     vec2<float> a1 = sigmoid(z1);

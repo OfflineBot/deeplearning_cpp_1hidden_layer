@@ -1,3 +1,6 @@
+#ifndef TESTING_H
+#define TESTING_H
+
 #include <iostream>
 
 #include "types/vec_import.hpp"
@@ -44,18 +47,14 @@ int test() {
     DeepLearning dl;
 
     Normalize norm = dl.normalize(input_arr, output_arr);
-    printf("x: \n");
-    println(norm.x_norm);
-    printf("y: \n");
-    println(norm.y_norm);
 
     Matrix matrix = dl.init_matrix(2, 10, 1, 5);
-    printf("w1: \n");
-    println(matrix.w1);
 
-    TrainingData data = dl.train(10000, 0.01, matrix, norm);
+    TrainingData data = dl.train(40, 0.001, matrix, norm);
 
+    printf("enddata: w1:\n");
     println(data.matrix.w1);
     return 0;
 }
 
+#endif
