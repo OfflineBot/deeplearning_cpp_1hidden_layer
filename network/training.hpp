@@ -9,8 +9,11 @@ TrainingData DeepLearning::train(int iterations, float learning_rate, Matrix mat
             printf("%f%%", i / iterations * 100.0);
 
         ZAStorage za_storage = forward(matrix, norm);
+        printf("----  FINISHED FORWARD ----\n");
         DeltaStorage delta_storage = backward(matrix, norm, za_storage);
+        printf("---- FINISHED BACKWARD ----\n");
         Matrix matrix = update_matrix(matrix, norm, za_storage, delta_storage, learning_rate);
+        printf("---- FNISHED UPDATING ----\n");
 
     }
 

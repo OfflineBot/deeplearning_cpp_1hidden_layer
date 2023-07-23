@@ -17,6 +17,7 @@ ZAStorage DeepLearning::forward(Matrix matrix, Normalize norm) {
     vec3<float> z;
     vec3<float> a;
 
+    printf("layers: %i", layers);
     for (int i = 0; i < layers; i++) {
         printf("z%i\n", i);
         vec2<float> my_z = dot(last_a, matrix.w[i]) + matrix.b[i];
@@ -25,8 +26,9 @@ ZAStorage DeepLearning::forward(Matrix matrix, Normalize norm) {
         a.push_back(my_a);
         last_a = my_a;
     }
-    printf("z2");
+    printf("z2\n");
     vec2<float> z2 = dot(last_a, matrix.w2) + matrix.b2;
+    printf("finished forward\n");
 
     return ZAStorage {
         z1,
@@ -38,20 +40,24 @@ ZAStorage DeepLearning::forward(Matrix matrix, Normalize norm) {
 }
 
 DeltaStorage DeepLearning::backward(Matrix matrix, Normalize norm, ZAStorage za_storage) {
-    int layers = matrix.b.size();
+    int layers = matrix.b.size() - 1;
 
+    printf("delta2\n");
     vec2<float> delta2 = za_storage.z2 - norm.y_norm * deriv_sigmoid(za_storage.z2);
     vec3<float> delta;
     vec2<float> last_delta = delta2;
 
     for (int i = 0; i < layers; i++) {
-        vec2<float> my_delta = dot(last_delta, t(matrix.w[layers + 1 - i])) * deriv_sigmoid(za_storage.z[layers - i]);
+        printf("delta%i\n", i);
+        vec2<float> my_delta = dot(last_delta, t(matrix.w[layers - i])) * deriv_sigmoid(za_storage.z[layers - 1 - i]);
         delta.push_back(my_delta);
         last_delta = my_delta;
     }
 
+    printf("delta1\n");
     vec2<float> delta1 = dot(last_delta, t(matrix.w[0])) * deriv_sigmoid(za_storage.z1);
-
+    printf("finished deltas\n");
+    
     return DeltaStorage {
         delta2,
         delta,

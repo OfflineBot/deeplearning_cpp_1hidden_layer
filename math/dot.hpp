@@ -11,11 +11,6 @@ vec2<float> dot(vec2<float> array1, vec2<float> array2) {
 
     int array2_size = array2.size();
     int array2_i_size = array2[0].size();
-
-    if (rows != array2_size || cols != array2_i_size) {
-        printf("dont match: (%i, %i) (%i, %i)\n", rows, cols, array2_size, array2_i_size);
-        throw std::runtime_error("Matrices dont match up!");
-    }
     
     vec2<float> result = zero_matrix(rows, array2_i_size);
     
